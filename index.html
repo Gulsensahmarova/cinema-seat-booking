@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BAKU FILM CENTER</title>
+    </head>
+    <body>
+        <div id="sektor-menyusu" class="menu-container">
+            <h1>Sektor Seçin</h1>
+            <button class="sector-btn" onclick="sektoruBaslat(40, 'Sektor A')">Sektor A</button>
+            <button class="sector-btn" onclick="sektoruBaslat(100, 'Sektor B')">Sektor B</button>
+            <button class="sector-btn" onclick="sektoruBaslat(16, 'VIP Sektor')">VIP Sektor</button>
+        </div>
+
+        <div id="xarita-sahasi" style="display: none;">
+            <button id="geri-btn" class="back-btn">⬅ Geri qayıt</button>
+            <h2 id="sektor-adi" style="color: white; text-align: center;"></h2>
+            
+            <div class="teatre-conteiner">
+                <div class="screen">SƏHNƏ</div>
+                <div class="seating" id="area">
+                    </div>
+                    <div class="total-info">
+    Cəmi məbləğ: <span id="total-price">0</span> AZN
+</div>
+<div class="legend">
+    <div class="item"><div class="seat"></div> Boş</div>
+    <div class="item"><div class="seat occuped"></div> Dolu</div>
+    <div class="item"><div class="seat selected"></div> Seçdiyiniz</div>
+</div>
+
+<button id="buy-btn" onclick="alert('Biletləriniz uğurla alındı!')">Biletləri Al</button>
+            </div>
+        </div>
+        <script src="index.js"></script>  
+    </body>
+</html>
